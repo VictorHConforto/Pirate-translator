@@ -1,0 +1,8 @@
+services:
+  pirate-translator:
+    build: .
+    image: pirate-translator:latest
+    container_name: pirate-translator
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
